@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatentFlow — עלויות שרת</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap');
+
+        :root {
+            --navy: #0a1628;
+            --navy-light: #132042;
+            --gold: #c9a84c;
+            --gold-light: #e8d48b;
+            --gold-dark: #a8872e;
+            --white: #ffffff;
+            --gray-100: #f7f8fa;
+            --gray-200: #e9ecf1;
+            --gray-600: #6b7280;
+            --text-dark: #1a2332;
+            --text-mid: #4a5568;
+            --green: #10b981;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        @page { size: A4; margin: 0; }
+
+        body {
+            font-family: 'Heebo', sans-serif;
+            background: var(--white);
+            color: var(--text-dark);
+            line-height: 1.6;
+            font-size: 13px;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0 auto;
+            background: var(--white);
+            position: relative;
+        }
+
+        @media print {
+            body { background: white; }
+            .page { width: 100%; min-height: auto; }
+            .no-print { display: none !important; }
+        }
+
+        /* HEADER */
+        .header {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            padding: 30px 50px 24px;
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+        }
+
+        .header-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 { font-size: 26px; font-weight: 800; color: var(--white); }
+        .header h1 span { color: var(--gold); }
+        .header .sub { color: var(--gold-light); font-size: 14px; font-weight: 400; margin-top: 2px; }
+        .header .date { color: rgba(255,255,255,0.6); font-size: 12px; text-align: left; }
+
+        .content { padding: 24px 50px; }
+
+        /* RECOMMENDED BOX */
+        .rec-box {
+            background: linear-gradient(135deg, var(--navy), var(--navy-light));
+            border-radius: 12px;
+            padding: 20px 28px;
+            margin-bottom: 22px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .rec-main {
+            text-align: center;
+            border: 1px solid rgba(201,168,76,0.3);
+            border-radius: 10px;
+            padding: 14px 32px;
+            background: rgba(201,168,76,0.08);
+        }
+
+        .rec-main .label { color: var(--gold); font-size: 12px; font-weight: 600; margin-bottom: 2px; }
+        .rec-main .price { color: var(--gold-light); font-size: 32px; font-weight: 800; }
+        .rec-main .price-note { color: rgba(255,255,255,0.5); font-size: 11px; }
+
+        .rec-details { flex: 1; }
+        .rec-details .rec-title { color: var(--white); font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+        .rec-details ul { list-style: none; }
+        .rec-details li {
+            color: rgba(255,255,255,0.7);
+            font-size: 11.5px;
+            padding: 2px 0;
+        }
+        .rec-details li::before { content: '✓ '; color: var(--green); font-weight: 700; }
+
+        .rec-scale {
+            text-align: center;
+            padding: 10px 20px;
+        }
+        .rec-scale .label { color: rgba(255,255,255,0.5); font-size: 10px; margin-bottom: 2px; }
+        .rec-scale .price { color: rgba(255,255,255,0.7); font-size: 18px; font-weight: 700; }
+        .rec-scale .price-note { color: rgba(255,255,255,0.35); font-size: 10px; }
+
+        /* TABLE */
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+
+        thead th {
+            background: var(--navy);
+            color: var(--white);
+            padding: 10px 14px;
+            text-align: right;
+            font-weight: 600;
+            font-size: 11.5px;
+        }
+
+        thead th:first-child { border-radius: 0 8px 0 0; }
+        thead th:last-child { border-radius: 8px 0 0 0; }
+
+        tbody td {
+            padding: 9px 14px;
+            border-bottom: 1px solid var(--gray-200);
+            font-size: 12px;
+        }
+
+        tbody tr:nth-child(even) { background: var(--gray-100); }
+
+        .col-service { font-weight: 600; color: var(--navy); }
+        .col-get { color: var(--text-mid); font-size: 11.5px; }
+
+        .col-price {
+            font-weight: 700;
+            color: var(--navy);
+            direction: ltr;
+            text-align: left;
+            white-space: nowrap;
+        }
+
+        .free {
+            background: var(--green);
+            color: white;
+            font-size: 10px;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-weight: 600;
+        }
+
+        .total-row td {
+            background: rgba(201,168,76,0.1) !important;
+            font-weight: 700;
+            color: var(--navy);
+            border-top: 2px solid var(--gold);
+            font-size: 13px;
+            padding: 12px 14px;
+        }
+
+        /* SECTION TITLE */
+        .section-title {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid var(--gray-200);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .section-title .dot {
+            width: 8px; height: 8px;
+            background: var(--gold);
+            border-radius: 50%;
+        }
+
+        /* NOTE */
+        .note {
+            background: var(--gray-100);
+            border-right: 3px solid var(--gold);
+            padding: 10px 14px;
+            border-radius: 0 8px 8px 0;
+            font-size: 11.5px;
+            color: var(--text-mid);
+            margin-bottom: 18px;
+            line-height: 1.8;
+        }
+
+        .note strong { color: var(--navy); }
+
+        /* SAVINGS BOX */
+        .savings {
+            background: rgba(16, 185, 129, 0.06);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 10px;
+            padding: 14px 18px;
+            margin-bottom: 16px;
+        }
+
+        .savings-title {
+            color: #059669;
+            font-weight: 700;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .savings-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px 20px;
+        }
+
+        .savings-item {
+            font-size: 11.5px;
+            color: var(--text-mid);
+        }
+
+        .savings-item strong {
+            color: var(--navy);
+        }
+
+        /* FOOTER */
+        .footer {
+            background: var(--navy);
+            padding: 14px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            bottom: 0; left: 0; right: 0;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+        }
+
+        .footer-brand { color: var(--gold); font-weight: 700; font-size: 13px; }
+        .footer-text { color: rgba(255,255,255,0.4); font-size: 10px; }
+
+        .print-btn {
+            position: fixed;
+            bottom: 30px; left: 30px;
+            background: var(--navy);
+            color: var(--gold);
+            border: 2px solid var(--gold);
+            padding: 12px 24px;
+            font-family: 'Heebo', sans-serif;
+            font-size: 14px;
+            font-weight: 700;
+            border-radius: 10px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .print-btn:hover { background: var(--gold); color: var(--navy); }
+    </style>
+</head>
+<body>
+
+<button class="print-btn no-print" onclick="window.print()">שמור כ-PDF</button>
+
+<div class="page">
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header-row">
+            <div>
+                <h1>Patent<span>Flow</span></h1>
+                <div class="sub">עלויות תשתית Google Cloud — חודשי</div>
+            </div>
+            <div class="date">June 9, 2026</div>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- RECOMMENDED BOX -->
+        <div class="rec-box">
+            <div class="rec-main">
+                <div class="label">חבילה מומלצת</div>
+                <div class="price">$70</div>
+                <div class="price-note">לחודש | עד 1,000 משתמשים</div>
+            </div>
+            <div class="rec-details">
+                <div class="rec-title">מה כלול בחבילה:</div>
+                <ul>
+                    <li>שרת אתר + Backend עם auto-scaling</li>
+                    <li>בסיס נתונים PostgreSQL + חיפוש סמנטי</li>
+                    <li>קאשינג + עיבוד משימות ברקע</li>
+                    <li>התחברות Google / אימייל (חינם)</li>
+                    <li>AI — עד 50 פטנטים בחודש</li>
+                    <li>SSL + IP קבוע + גיבויים</li>
+                </ul>
+            </div>
+            <div class="rec-scale">
+                <div class="label">אפשרות שדרוג</div>
+                <div class="price">$150</div>
+                <div class="price-note">10K משתמשים | 200 פטנטים</div>
+            </div>
+        </div>
+
+        <!-- MAIN TABLE -->
+        <div class="section-title"><div class="dot"></div> פירוט — משלם כמה, מקבל מה</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th style="width:18%">שירות</th>
+                    <th style="width:32%">מה מקבלים</th>
+                    <th style="width:24%">תעבורה / קיבולת</th>
+                    <th style="width:26%">עלות חודשית</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-service">Cloud Run</td>
+                    <td class="col-get">שרת אתר (Next.js) + Backend (FastAPI), גדל לפי תעבורה</td>
+                    <td class="col-get">~500K בקשות/חודש</td>
+                    <td class="col-price">~$25</td>
+                </tr>
+                <tr>
+                    <td class="col-service">Cloud SQL</td>
+                    <td class="col-get">בסיס נתונים PostgreSQL + חיפוש סמנטי פטנטים</td>
+                    <td class="col-get">עד 5GB אחסון</td>
+                    <td class="col-price">~$12</td>
+                </tr>
+                <tr>
+                    <td class="col-service">Redis</td>
+                    <td class="col-get">קאשינג + תור משימות AI ברקע</td>
+                    <td class="col-get">1GB זיכרון מהיר</td>
+                    <td class="col-price">~$8</td>
+                </tr>
+                <tr>
+                    <td class="col-service">Firebase Auth</td>
+                    <td class="col-get">התחברות Google / אימייל + ניהול משתמשים</td>
+                    <td class="col-get">עד 50,000 משתמשים</td>
+                    <td class="col-price"><span class="free">FREE</span></td>
+                </tr>
+                <tr>
+                    <td class="col-service">Firestore DB</td>
+                    <td class="col-get">נתוני זמן אמת, הגדרות, sessions</td>
+                    <td class="col-get">50K קריאות/יום + 1GB</td>
+                    <td class="col-price"><span class="free">FREE</span></td>
+                </tr>
+                <tr>
+                    <td class="col-service">Gemini AI</td>
+                    <td class="col-get">סיווג פטנטים, כתיבת claims, ניתוח, בדיקת שרטוטים</td>
+                    <td class="col-get">~50 פטנטים/חודש</td>
+                    <td class="col-price">~$20</td>
+                </tr>
+                <tr>
+                    <td class="col-service">רשת + אחסון</td>
+                    <td class="col-get">IP קבוע, SSL חינם, Docker images, תעבורה</td>
+                    <td class="col-get">עד 5GB תעבורה/חודש</td>
+                    <td class="col-price">~$5</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="3" style="text-align: right;">סה"כ חודשי — חבילה מומלצת</td>
+                    <td class="col-price" style="font-size: 15px;">~$70</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- SCALE TABLE -->
+        <div class="section-title"><div class="dot"></div> עולה בגודל — עלות לפי צמיחה</div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>התחלה — $70</th>
+                    <th>צמיחה — $150</th>
+                    <th>מלא — $300</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="col-service">משתמשים פעילים</td>
+                    <td class="col-get">עד 1,000</td>
+                    <td class="col-get">עד 10,000</td>
+                    <td class="col-get">עד 30,000</td>
+                </tr>
+                <tr>
+                    <td class="col-service">בקשות לשרת</td>
+                    <td class="col-get">~500K/חודש</td>
+                    <td class="col-get">~5M/חודש</td>
+                    <td class="col-get">~10M/חודש</td>
+                </tr>
+                <tr>
+                    <td class="col-service">פטנטים AI</td>
+                    <td class="col-get">~50/חודש</td>
+                    <td class="col-get">~200/חודש</td>
+                    <td class="col-get">~400/חודש</td>
+                </tr>
+                <tr>
+                    <td class="col-service">נפח DB</td>
+                    <td class="col-get">עד 5GB</td>
+                    <td class="col-get">עד 20GB</td>
+                    <td class="col-get">עד 50GB</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- SAVINGS -->
+        <div class="savings">
+            <div class="savings-title">איך חוסכים עוד יותר</div>
+            <div class="savings-grid">
+                <div class="savings-item"><strong>$300 קרדיט חינם</strong> — גוגל נותנת ללקוחות חדשים, מכסה ~4 חודשים ראשונים</div>
+                <div class="savings-item"><strong>Batch API = חיסכון 50%</strong> — לפעולות AI שלא דורשות תגובה מיידית</div>
+                <div class="savings-item"><strong>Scale to Zero</strong> — Cloud Run נכבה בלי תעבורה, לא משלמים כלום</div>
+                <div class="savings-item"><strong>Context Caching = חיסכון 90%</strong> — על תבניות פטנטים חוזרות</div>
+                <div class="savings-item"><strong>Firebase Auth + Firestore</strong> — חינם לגמרי עד 50K משתמשים</div>
+                <div class="savings-item"><strong>Redis כ-Container</strong> — $8 במקום $35 של Memorystore מנוהל</div>
+            </div>
+        </div>
+
+        <!-- NOTE -->
+        <div class="note">
+            <strong>שורה תחתונה:</strong> מתחילים ב-$70/חודש בלבד (ועם קרדיט של גוגל — בפועל $0 ב-4 חודשים ראשונים). המערכת גדלה אוטומטית לפי הביקוש — משלמים רק על מה שמשתמשים בפועל. אין התחייבות, אפשר לשדרג או לצמצם בכל רגע.
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-brand">PatentFlow</div>
+        <div class="footer-text">Cloud Cost Report — June 2026 — Confidential</div>
+    </div>
+</div>
+
+</body>
+</html>
