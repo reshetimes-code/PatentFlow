@@ -1,0 +1,722 @@
+{
+  "common": {
+    "getStarted": "Get Started",
+    "learnMore": "Learn More",
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "language": "Language",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "close": "Close",
+    "loading": "Loading...",
+    "success": "Success",
+    "error": "Error"
+  },
+  "nav": {
+    "features": "Features",
+    "howItWorks": "How It Works",
+    "pricing": "Pricing",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "AI-Powered Patent Platform",
+    "title": "Transform Your Ideas Into",
+    "titleHighlight": "Protected Patents",
+    "subtitle": "PatentFlow uses advanced AI to guide inventors through every step of the patent process — from initial disclosure to USPTO filing — saving up to 85% compared to traditional law firms.",
+    "cta": "Start Your Patent Journey",
+    "ctaSecondary": "Watch Demo",
+    "stats": {
+      "costSaving": "Cost Savings",
+      "timeSaved": "Faster Filing",
+      "successRate": "Success Rate",
+      "patents": "Patents Filed"
+    }
+  },
+  "trustedBy": {
+    "title": "Trusted by Innovators Worldwide"
+  },
+  "features": {
+    "sectionTitle": "Everything You Need to Patent Your Invention",
+    "sectionSubtitle": "From initial concept to USPTO filing, PatentFlow handles every step with AI-powered precision.",
+    "aiDrafting": {
+      "title": "AI Patent Drafting",
+      "description": "Generate comprehensive patent specifications with AI that understands USPTO requirements, legal terminology, and technical writing standards."
+    },
+    "priorArt": {
+      "title": "Prior Art Search",
+      "description": "Search 87M+ patents across USPTO, Google Patents, and EPO databases. AI scores relevance and identifies novelty gaps."
+    },
+    "claimsGen": {
+      "title": "Claims Engineering",
+      "description": "Automatically generate and optimize independent and dependent claims with real-time validation and prior art clearance."
+    },
+    "drawings": {
+      "title": "Technical Drawings",
+      "description": "Upload and validate patent drawings against 37 CFR § 1.84 compliance standards. AI checks margins, resolution, and line weight."
+    },
+    "filing": {
+      "title": "Direct USPTO Filing",
+      "description": "File directly with USPTO Patent Center. Automated document assembly, fee calculation, and pre-submission compliance checks."
+    },
+    "portfolio": {
+      "title": "Portfolio Management",
+      "description": "Track all applications, deadlines, maintenance fees, and office actions in one unified dashboard with smart alerts."
+    }
+  },
+  "howItWorks": {
+    "sectionTitle": "How PatentFlow Works",
+    "sectionSubtitle": "Four simple steps from idea to filed patent application.",
+    "step1": {
+      "title": "Describe Your Invention",
+      "description": "Tell us about your invention in plain English. Our guided wizard asks the right questions to capture every detail."
+    },
+    "step2": {
+      "title": "AI Drafts Your Patent",
+      "description": "Our AI engine generates a complete patent application — specification, claims, abstract, and figure descriptions."
+    },
+    "step3": {
+      "title": "Review & Refine",
+      "description": "Review AI-generated content with real-time compliance checking. Edit, refine, and approve each section."
+    },
+    "step4": {
+      "title": "File with USPTO",
+      "description": "Submit directly to USPTO Patent Center with automated document assembly and fee payment."
+    }
+  },
+  "stats": {
+    "costSaving": "Average Cost Savings",
+    "filingTime": "Average Filing Time",
+    "patentsFiled": "Patents Filed",
+    "satisfaction": "Client Satisfaction",
+    "costValue": "85%",
+    "timeValue": "72hrs",
+    "patentsValue": "12,500+",
+    "satisfactionValue": "4.9/5"
+  },
+  "pricing": {
+    "sectionTitle": "Simple, Transparent Pricing",
+    "sectionSubtitle": "Choose the plan that fits your innovation needs. All plans include AI-powered drafting.",
+    "monthly": "Monthly",
+    "annual": "Annual",
+    "annualSave": "Save 20%",
+    "perMonth": "/month",
+    "popular": "Most Popular",
+    "startFree": "Start Free",
+    "choosePlan": "Choose Plan",
+    "contactSales": "Contact Sales",
+    "free": {
+      "name": "Starter",
+      "price": "0",
+      "description": "Perfect for exploring the platform.",
+      "features": [
+        "1 Provisional Patent Draft",
+        "Basic Prior Art Search",
+        "Community Support",
+        "Standard Templates",
+        "Fee Calculator"
+      ]
+    },
+    "pro": {
+      "name": "Professional",
+      "price": "99",
+      "annualPrice": "79",
+      "description": "For serious inventors and startups.",
+      "features": [
+        "10 Patent Drafts / month",
+        "Advanced Prior Art Analysis",
+        "AI Claims Generation",
+        "Priority Email Support",
+        "Custom Templates",
+        "Filing Assistance",
+        "Novelty Gap Reports"
+      ]
+    },
+    "business": {
+      "name": "Business",
+      "price": "299",
+      "annualPrice": "239",
+      "description": "For patent firms and growing teams.",
+      "features": [
+        "Unlimited Patent Drafts",
+        "Full AI Suite",
+        "Team Collaboration",
+        "White Label Option",
+        "API Access",
+        "Dedicated Account Manager",
+        "Office Action Assistant",
+        "SLA Guarantee"
+      ]
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Custom",
+      "description": "For large organizations with complex needs.",
+      "features": [
+        "Everything in Business",
+        "Custom AI Training",
+        "On-Premise Deployment",
+        "Custom Integrations",
+        "24/7 Phone Support",
+        "Compliance Package (SOC 2)",
+        "Dedicated Infrastructure",
+        "Volume Discounts"
+      ]
+    }
+  },
+  "testimonials": {
+    "sectionTitle": "Trusted by Innovators",
+    "sectionSubtitle": "See what patent professionals and inventors say about PatentFlow.",
+    "items": [
+      {
+        "quote": "PatentFlow saved us over $15,000 on our first utility patent. The AI drafting quality rivals what we used to get from expensive law firms.",
+        "author": "Sarah Chen",
+        "role": "CTO, TechVentures Inc.",
+        "avatar": "SC"
+      },
+      {
+        "quote": "As a solo inventor, I never thought I could file a patent myself. PatentFlow made it possible with step-by-step guidance that actually works.",
+        "author": "Michael Rodriguez",
+        "role": "Independent Inventor",
+        "avatar": "MR"
+      },
+      {
+        "quote": "The prior art search alone is worth the subscription. It found relevant patents that our traditional search missed entirely.",
+        "author": "Dr. Emily Park",
+        "role": "R&D Director, BioMed Solutions",
+        "avatar": "EP"
+      }
+    ]
+  },
+  "faq": {
+    "sectionTitle": "Frequently Asked Questions",
+    "sectionSubtitle": "Everything you need to know about PatentFlow.",
+    "items": [
+      {
+        "question": "Is PatentFlow a replacement for a patent attorney?",
+        "answer": "PatentFlow is a document preparation and filing assistance tool. While it handles most of the drafting and filing process, we recommend consulting a registered patent attorney for complex inventions or when significant commercial value is at stake."
+      },
+      {
+        "question": "What types of patents does PatentFlow support?",
+        "answer": "PatentFlow supports Utility Patents, Design Patents, and Provisional Applications. We guide you through the correct workflow based on your invention type."
+      },
+      {
+        "question": "How accurate is the AI-generated patent draft?",
+        "answer": "Our AI generates USPTO-compliant drafts with proper legal terminology and structure. Each draft undergoes automated compliance checking against 37 CFR Part 1 and MPEP requirements."
+      },
+      {
+        "question": "Can I file directly with the USPTO through PatentFlow?",
+        "answer": "Yes! PatentFlow integrates directly with USPTO Patent Center for electronic filing. We handle document assembly, format validation, and fee calculation."
+      },
+      {
+        "question": "How much can I really save compared to a law firm?",
+        "answer": "Law firms typically charge $8,000-$25,000+ for utility patents. With PatentFlow, total costs (including USPTO fees) typically range from $1,500-$3,000, representing 70-85% savings."
+      },
+      {
+        "question": "Is my invention data secure?",
+        "answer": "Absolutely. All data is encrypted at rest (AES-256) and in transit (TLS 1.3). We use row-level security, per-user data isolation, and are pursuing SOC 2 Type II certification."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Protect Your Innovation?",
+    "subtitle": "Join thousands of inventors who are using AI to file patents faster, better, and at a fraction of the cost.",
+    "button": "Start Free Trial",
+    "noCard": "No credit card required"
+  },
+  "footer": {
+    "description": "AI-powered patent creation and filing platform. Transform your ideas into protected intellectual property.",
+    "product": "Product",
+    "company": "Company",
+    "legal": "Legal",
+    "support": "Support",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "disclaimer": "Legal Disclaimer",
+    "helpCenter": "Help Center",
+    "documentation": "Documentation",
+    "status": "System Status",
+    "copyright": "All rights reserved.",
+    "accessibility": "Accessibility",
+    "legalNote": "PatentFlow is a document preparation tool, not a law firm. It does not provide legal advice."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: June 1, 2026",
+    "intro": "At PatentFlow, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our platform. Please read this policy carefully. By using PatentFlow, you agree to the collection and use of information in accordance with this policy.",
+    "sections": {
+      "dataCollection": {
+        "title": "Information We Collect",
+        "content": "We collect information you provide directly to us, including: personal information (name, email address, phone number), account credentials, payment information processed securely through our payment provider, invention disclosures and patent application content, usage data and interaction logs, device information and IP addresses, and cookies and similar tracking technologies."
+      },
+      "dataUsage": {
+        "title": "How We Use Your Information",
+        "content": "We use the information we collect to: provide, maintain, and improve our services, process patent applications and filings, communicate with you about your account and applications, send you technical notices and support messages, comply with legal obligations including USPTO filing requirements, detect and prevent fraud and abuse, and conduct research and analytics to improve our platform."
+      },
+      "dataSecurity": {
+        "title": "Data Security",
+        "content": "We implement industry-standard security measures to protect your information. All data is encrypted at rest using AES-256 encryption and in transit using TLS 1.3. We employ row-level security, per-user data isolation, and regular security audits. We are pursuing SOC 2 Type II certification to further demonstrate our commitment to security."
+      },
+      "cookies": {
+        "title": "Cookies & Tracking Technologies",
+        "content": "We use cookies and similar tracking technologies to collect and track information and to improve our service. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, some features of our service may not function properly without cookies. We use essential cookies for authentication and security, analytics cookies to understand usage patterns, and preference cookies to remember your settings."
+      },
+      "thirdParties": {
+        "title": "Third-Party Services",
+        "content": "We may share your information with third-party service providers who perform services on our behalf, including payment processing (Stripe), cloud hosting (AWS/Vercel), analytics (Google Analytics), email communications, and USPTO electronic filing services. These providers are contractually obligated to protect your information and use it only for the purposes we specify."
+      },
+      "userRights": {
+        "title": "Your Rights",
+        "content": "Depending on your location, you may have the following rights regarding your personal data: the right to access your personal information, the right to correct inaccurate data, the right to delete your data (subject to legal retention requirements), the right to data portability, the right to opt out of marketing communications, and the right to lodge a complaint with a supervisory authority. For California residents, additional rights under CCPA apply. For EU/EEA residents, GDPR rights are fully supported."
+      },
+      "retention": {
+        "title": "Data Retention",
+        "content": "We retain your personal information for as long as your account is active or as needed to provide you services. Patent-related documents may be retained longer to comply with legal requirements and USPTO regulations. You may request deletion of your account and associated data by contacting our support team, subject to legal retention obligations."
+      },
+      "children": {
+        "title": "Children's Privacy",
+        "content": "Our service is not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If we become aware that a child has provided us with personal information, we will take steps to delete such information."
+      },
+      "changes": {
+        "title": "Changes to This Policy",
+        "content": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the \"Last updated\" date. You are advised to review this Privacy Policy periodically for any changes. Changes are effective when they are posted on this page."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have any questions about this Privacy Policy or our data practices, please contact us at privacy@patentflow.com or through our Help Center. For data protection inquiries in the EU, you may contact our Data Protection Officer at dpo@patentflow.com."
+      }
+    }
+  },
+  "dashboard": {
+    "welcome": "Welcome back",
+    "subtitle": "Here's what's happening with your patents today.",
+    "stats": {
+      "totalPatents": "Total Patents",
+      "inProgress": "In Progress",
+      "approved": "Approved",
+      "actionRequired": "Action Required"
+    },
+    "recentPatents": "Recent Patents",
+    "viewAll": "View All",
+    "quickActions": "Quick Actions",
+    "actions": {
+      "newPatent": "Create New Patent",
+      "priorArt": "Prior Art Search",
+      "compliance": "Compliance Check",
+      "analytics": "View Analytics"
+    },
+    "activity": "Recent Activity",
+    "sidebar": {
+      "dashboard": "Dashboard",
+      "myPatents": "My Patents",
+      "newPatent": "New Patent",
+      "settings": "Settings",
+      "logout": "Log Out"
+    },
+    "twelveMonthClocks": "12-Month Clocks",
+    "daysRemainingLabel": "days remaining",
+    "twelveMonthDateLabel": "12-month date",
+    "continuePatent": "Continue to Full Patent Application",
+    "noPatentsYet": "You haven't started an invention yet."
+  },
+  "portfolio": {
+    "title": "My Patents",
+    "subtitle": "Manage and track all your patent applications.",
+    "newPatent": "New Patent",
+    "searchPlaceholder": "Search patents by title or ID...",
+    "tabs": {
+      "all": "All",
+      "draft": "Drafts",
+      "review": "In Review",
+      "filed": "Filed",
+      "approved": "Approved",
+      "actionRequired": "Action Required"
+    },
+    "table": {
+      "patent": "Patent",
+      "type": "Type",
+      "status": "Status",
+      "progress": "Progress",
+      "updated": "Updated"
+    },
+    "view": "View",
+    "empty": {
+      "title": "No patents found",
+      "subtitle": "Try adjusting your search or filters, or create a new patent."
+    }
+  },
+  "wizard": {
+    "title": "Create New Patent",
+    "subtitle": "Follow the steps below to prepare your patent application.",
+    "backToPatents": "Back to Patents",
+    "steps": {
+      "disclosure": "Disclosure",
+      "priorArt": "Prior Art",
+      "claims": "Claims",
+      "drawings": "Drawings",
+      "review": "Review"
+    },
+    "back": "Back",
+    "next": "Continue",
+    "submit": "Submit Application",
+    "submitSuccess": "Application Submitted!",
+    "submitSuccessText": "Your patent application has been submitted successfully. You can track its progress from your dashboard.",
+    "disclosure": {
+      "title": "Invention Disclosure",
+      "description": "Tell us about your invention. The more detail you provide, the better our AI can assist you.",
+      "patentType": "Patent Type",
+      "types": {
+        "utility": "Utility Patent",
+        "design": "Design Patent",
+        "provisional": "Provisional"
+      },
+      "inventionTitle": "Invention Title",
+      "titlePlaceholder": "e.g., AI-Powered Document Analysis System",
+      "inventorName": "Inventor Name",
+      "inventorPlaceholder": "Full legal name",
+      "inventionDescription": "Invention Description",
+      "descriptionPlaceholder": "Describe your invention in detail. What does it do? How does it work? What problem does it solve?",
+      "technicalField": "Technical Field",
+      "fieldPlaceholder": "e.g., Machine Learning, Biotechnology, Electronics",
+      "aiHint": "AI-Powered Assistance",
+      "aiHintText": "After completing this step, our AI will analyze your disclosure and generate a comprehensive patent specification draft."
+    },
+    "priorArt": {
+      "title": "Prior Art Search",
+      "description": "Search existing patents to identify potential conflicts and strengthen your application.",
+      "keywords": "Search Keywords",
+      "keywordPlaceholder": "Add a keyword and press Enter",
+      "add": "Add",
+      "problemSolved": "Problem Solved",
+      "problemPlaceholder": "What specific problem does your invention solve?",
+      "novelty": "What Makes It Novel?",
+      "noveltyPlaceholder": "Describe what makes your invention different from existing solutions.",
+      "runSearch": "Run AI Prior Art Search",
+      "results": "Search Results",
+      "match": "match"
+    },
+    "claims": {
+      "title": "Patent Claims",
+      "description": "Define the legal scope of your patent protection.",
+      "independent": "Independent Claims",
+      "dependent": "Dependent Claims",
+      "generateAI": "Generate with AI",
+      "claim": "Claim",
+      "claimPlaceholder": "Write your independent claim here...",
+      "dependentPlaceholder": "Write your dependent claim here...",
+      "dependsOn": "Depends on Claim",
+      "addClaim": "Add Another Claim"
+    },
+    "drawings": {
+      "title": "Technical Drawings",
+      "description": "Upload patent drawings that illustrate your invention.",
+      "upload": "Drag & drop your drawings here, or click to browse",
+      "uploadHint": "Supports PNG, JPG, TIFF — max 10MB per file",
+      "compliance": "37 CFR § 1.84 Compliance",
+      "complianceText": "Our AI automatically checks your drawings for margin requirements, resolution (300 DPI minimum), line weight, and numbering compliance.",
+      "compliant": "Compliant"
+    },
+    "review": {
+      "title": "Review & Submit",
+      "description": "Review your complete application before filing.",
+      "inventionTitle": "Invention Title",
+      "patentType": "Patent Type",
+      "edit": "Edit",
+      "checklist": "Filing Checklist",
+      "items": {
+        "disclosure": "Invention disclosure completed",
+        "priorArt": "Prior art search completed",
+        "claims": "Patent claims defined",
+        "drawings": "Technical drawings uploaded",
+        "fees": "Filing fees calculated"
+      },
+      "feeEstimate": "USPTO Fee Estimate",
+      "filingFee": "Filing Fee",
+      "searchFee": "Search Fee",
+      "examFee": "Examination Fee",
+      "total": "Estimated Total"
+    }
+  },
+  "patentDetail": {
+    "backToPatents": "Back to Patents",
+    "notFound": "Patent not found",
+    "notFoundText": "The patent you're looking for doesn't exist or has been removed.",
+    "progress": "Application Progress",
+    "description": "Invention Description",
+    "sections": "Application Sections",
+    "sectionNames": {
+      "disclosure": "Invention Disclosure",
+      "priorArt": "Prior Art Search",
+      "claims": "Patent Claims",
+      "drawings": "Technical Drawings",
+      "title": "Title of the Invention",
+      "short_summary": "Short Summary",
+      "technical_field": "Technical Field",
+      "background": "Background",
+      "summary_of_invention": "Summary of the Invention",
+      "brief_description_of_drawings": "Brief Description of the Drawings",
+      "detailed_description": "Detailed Description",
+      "alternative_embodiments": "Alternative Embodiments",
+      "examples_use_cases": "Examples / Use Cases",
+      "draft_claims": "Internal Draft Claims (not required for filing)"
+    },
+    "complete": "Complete",
+    "pending": "Pending",
+    "details": "Patent Details",
+    "type": "Patent Type",
+    "inventor": "Inventor",
+    "field": "Technical Field",
+    "created": "Created",
+    "lastUpdated": "Last Updated",
+    "stats": "Application Stats",
+    "claims": "Claims",
+    "drawings": "Drawings",
+    "export": "Export",
+    "share": "Share",
+    "edit": "Edit",
+    "error": "Error",
+    "noneYet": "None yet.",
+    "tabs": {
+      "overview": "Overview",
+      "provisional": "Provisional",
+      "filing": "Filing & Deadlines",
+      "audit": "Audit Log"
+    },
+    "problemSolved": "Problem Solved",
+    "structuredRecord": "Invention Record",
+    "continueInterview": "Continue the AI Interview",
+    "inventors": "Inventors",
+    "confirmed": "Confirmed",
+    "confirmInventor": "Confirm",
+    "noDraftReady": "The invention record is ready. Generate a provisional application draft to get started.",
+    "noDraftNotReady": "Finish the AI interview until it's ready for a provisional draft.",
+    "generateDraft": "Generate Provisional Draft",
+    "completenessPassed": "Completeness check passed",
+    "completenessPending": "Some sections need more detail",
+    "provisionalStatus": {
+      "PROVISIONAL_DRAFT": "Draft — under review",
+      "PROVISIONAL_REVIEW": "Edited — needs re-review",
+      "PROVISIONAL_APPROVED": "Approved — ready to file",
+      "PROVISIONAL_FILED": "Filed"
+    },
+    "regenerate": "Regenerate with AI",
+    "words": "words",
+    "saveSection": "Save Changes",
+    "finalReview": "Final Review Before Filing",
+    "checklist": {
+      "reviewed_inventor_information": "I reviewed the inventor information.",
+      "reviewed_invention_description": "I reviewed the invention description.",
+      "reviewed_drawings": "I reviewed the drawings.",
+      "reviewed_claims": "I reviewed the internal draft claims, if applicable.",
+      "reviewed_filing_information": "I reviewed the filing information.",
+      "authorize_submission": "I authorize submission."
+    },
+    "completenessBlocksApproval": "All sections must pass the completeness check before you can approve.",
+    "authorizeSubmission": "Approve Provisional Draft",
+    "approved": "Approved",
+    "approvedText": "The provisional draft is approved. You can now record the official USPTO filing once you file it yourself through Patent Center.",
+    "recordFilingTitle": "Record the Official Filing",
+    "recordFilingHint": "PatentFlow does not file with the USPTO on your behalf. File this provisional application yourself through USPTO Patent Center, then record the filing date and application number USPTO assigned so your 12-month clock can start.",
+    "filingDate": "Filing Date",
+    "applicationNumber": "Application Number",
+    "recordFiling": "Record Filing",
+    "filingRecorded": "Filing Recorded",
+    "filingRecordedText": "Your 12-month clock has started.",
+    "filedSummary": "Filed {date} — Application No. {number}",
+    "noFilingYet": "No filing has been recorded yet.",
+    "filed": "Filed",
+    "twelveMonthDate": "12-Month Date",
+    "daysRemaining": "Days Remaining",
+    "upcomingDeadlines": "Upcoming Deadlines"
+  },
+  "choosePlan": {
+    "title": "Choose Your Plan",
+    "subtitle": "Select the plan that best fits your needs. You can always upgrade or downgrade later.",
+    "free": "Free",
+    "continue": "Continue to Patent Wizard",
+    "changeLater": "You can change your plan anytime from Settings."
+  },
+  "auth": {
+    "login": "Sign In",
+    "register": "Sign Up",
+    "welcomeBack": "Welcome Back",
+    "createAccount": "Create Your Account",
+    "loginSubtitle": "Sign in to manage your patent applications.",
+    "registerSubtitle": "Start protecting your inventions today.",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "John Doe",
+    "email": "Email Address",
+    "emailPlaceholder": "you@example.com",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot password?",
+    "loginButton": "Sign In",
+    "registerButton": "Create Account",
+    "orContinueWith": "or continue with",
+    "agreeTerms": "By creating an account, you agree to our",
+    "termsLink": "Terms of Service",
+    "and": "and",
+    "privacyLink": "Privacy Policy",
+    "backToHome": "Back to Home",
+    "error": "Error",
+    "passwordMismatch": "Passwords do not match.",
+    "registerSuccess": "Account Created!",
+    "registerSuccessText": "Welcome to PatentFlow. Let's start protecting your inventions."
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your account preferences and settings.",
+    "saved": "Settings Saved",
+    "savedText": "Your settings have been updated successfully.",
+    "tabs": {
+      "profile": "Profile",
+      "notifications": "Notifications",
+      "billing": "Billing",
+      "security": "Security"
+    },
+    "profile": {
+      "title": "Personal Information",
+      "description": "Update your personal details and inventor profile.",
+      "fullName": "Full Name",
+      "email": "Email Address",
+      "company": "Company / Organization",
+      "phone": "Phone Number",
+      "entityType": "USPTO Entity Type",
+      "entities": {
+        "micro": "Micro Entity",
+        "small": "Small Entity",
+        "large": "Large Entity"
+      },
+      "save": "Save Changes"
+    },
+    "notifications": {
+      "title": "Notification Preferences",
+      "description": "Choose what notifications you want to receive.",
+      "items": {
+        "statusUpdates": {
+          "title": "Patent Status Updates",
+          "description": "Get notified when your patent application status changes."
+        },
+        "officeActions": {
+          "title": "Office Actions",
+          "description": "Receive alerts when USPTO office actions require your response."
+        },
+        "deadlines": {
+          "title": "Deadline Reminders",
+          "description": "Get reminders for upcoming filing deadlines and maintenance fees."
+        },
+        "marketing": {
+          "title": "Product Updates",
+          "description": "Receive news about new features and platform updates."
+        }
+      }
+    },
+    "billing": {
+      "currentPlan": "Current Plan",
+      "planDescription": "You are currently on the Professional plan.",
+      "perMonth": "/ month",
+      "changePlan": "Change Plan",
+      "cancel": "Cancel Subscription",
+      "paymentMethod": "Payment Method",
+      "expires": "Expires",
+      "update": "Update"
+    },
+    "security": {
+      "password": "Change Password",
+      "passwordDescription": "Update your password to keep your account secure.",
+      "currentPassword": "Current Password",
+      "newPassword": "New Password",
+      "confirmPassword": "Confirm New Password",
+      "updatePassword": "Update Password",
+      "twoFactor": "Two-Factor Authentication",
+      "twoFactorDescription": "Add an extra layer of security to your account.",
+      "enabled": "Enabled",
+      "manage2FA": "Manage 2FA"
+    }
+  },
+  "accessibility": {
+    "title": "Accessibility Statement",
+    "lastUpdated": "Last updated: June 1, 2026",
+    "intro": "PatentFlow is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards to ensure we provide equal access to all users.",
+    "sections": {
+      "commitment": {
+        "title": "Our Commitment",
+        "content": "We believe that the internet should be accessible to all people, regardless of ability or disability. PatentFlow is committed to providing a website and platform that is accessible to the widest possible audience. We actively work to increase the accessibility and usability of our platform and strive to adhere to accepted guidelines and standards."
+      },
+      "standards": {
+        "title": "Conformance Standards",
+        "content": "PatentFlow strives to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA. These guidelines explain how to make web content more accessible for people with disabilities and more user-friendly for everyone. We also comply with Section 508 of the Rehabilitation Act and the Americans with Disabilities Act (ADA) requirements for digital accessibility."
+      },
+      "features": {
+        "title": "Accessibility Features",
+        "content": "Our platform includes the following accessibility features: full keyboard navigation support throughout the application, proper heading structure and semantic HTML markup, ARIA labels and roles for interactive elements, sufficient color contrast ratios meeting WCAG AA standards, resizable text without loss of content or functionality, alternative text for all meaningful images, focus indicators for keyboard users, skip navigation links, form labels and error messages associated with their controls, and support for both left-to-right (English) and right-to-left (Hebrew) text directions."
+      },
+      "assistiveTech": {
+        "title": "Assistive Technology Support",
+        "content": "PatentFlow is designed to be compatible with the following assistive technologies: screen readers (NVDA, JAWS, VoiceOver, TalkBack), screen magnification software, speech recognition software, and keyboard-only navigation. We regularly test our platform with these technologies to ensure compatibility."
+      },
+      "knownLimitations": {
+        "title": "Known Limitations",
+        "content": "While we strive for full accessibility, some areas of our platform may have limitations: certain complex patent diagrams may not be fully described by alternative text, some third-party embedded content may not meet all accessibility standards, and PDF documents generated by the platform are being improved for screen reader compatibility. We are actively working to address these limitations."
+      },
+      "feedback": {
+        "title": "Feedback & Contact",
+        "content": "We welcome your feedback on the accessibility of PatentFlow. If you encounter accessibility barriers or have suggestions for improvement, please contact us at accessibility@patentflow.com or through our Help Center. We aim to respond to accessibility feedback within 2 business days and to resolve issues within 10 business days."
+      },
+      "enforcement": {
+        "title": "Enforcement & Compliance",
+        "content": "This statement was last reviewed and updated on the date indicated above. We regularly review our accessibility practices and conduct periodic audits using both automated tools and manual testing. If you are not satisfied with our response to your accessibility concern, you may escalate the issue through the appropriate enforcement channels in your jurisdiction."
+      }
+    }
+  },
+  "interview": {
+    "backToPatents": "Back to Patents",
+    "error": "Error",
+    "startTitle": "Start a New Invention",
+    "startSubtitle": "Tell us about your idea in your own words — the AI will interview you to fill in the gaps.",
+    "inventionTitle": "Invention Title",
+    "inventionTitlePlaceholder": "e.g., Smart Temperature-Adaptive Fan Controller",
+    "openingLabel": "Describe your invention",
+    "openingPlaceholder": "What is it? What problem does it solve? How does it work? Don't worry about being complete — the AI will ask follow-up questions.",
+    "aiHintText": "An AI interviewer will ask follow-up questions to understand your invention's components, how it works, what makes it different, and who contributed — the same core topics a patent professional would ask about.",
+    "startInterview": "Start Interview",
+    "interviewStatus": {
+      "INCOMPLETE": "Interview in progress",
+      "NEEDS_CLARIFICATION": "Needs clarification",
+      "READY_FOR_PROVISIONAL_DRAFT": "Ready for provisional draft"
+    },
+    "thinking": "Thinking…",
+    "replyPlaceholder": "Type your reply…",
+    "readyTitle": "Your invention record looks ready",
+    "readySubtitle": "You can generate a provisional application draft now, or keep adding detail.",
+    "generateDraft": "Generate Provisional Draft",
+    "recordTitle": "Invention Record",
+    "recordEmpty": "Facts the AI extracts from your answers will appear here, tagged by source.",
+    "confirm": "Confirm",
+    "reject": "Reject",
+    "missingTitle": "Still needs coverage",
+    "topics": {
+      "components": "Components",
+      "functions": "Functions",
+      "connections": "Connections",
+      "process_workflow": "Process / Workflow",
+      "inputs": "Inputs",
+      "outputs": "Outputs",
+      "materials": "Materials",
+      "software_hardware": "Software / Hardware",
+      "configurations": "Configurations",
+      "use_cases": "Use Cases",
+      "alternative_embodiments": "Alternative Embodiments",
+      "optional_features": "Optional Features",
+      "variations": "Variations",
+      "known_prototypes": "Known Prototypes",
+      "technical_limitations": "Technical Limitations",
+      "advantages": "Advantages"
+    }
+  }
+}
